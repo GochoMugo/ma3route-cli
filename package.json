@@ -1,0 +1,43 @@
+{
+  "name": "ma3route-cli",
+  "version": "0.0.0",
+  "description": "Terminal Interface to Ma3Route REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GochoMugo/ma3route-cli.git"
+  },
+  "keywords": [
+    "ma3route",
+    "terminal"
+  ],
+  "author": "GochoMugo <mugo@forfuture.co.ke> (https://gochomugo.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GochoMugo/ma3route-cli/issues"
+  },
+  "homepage": "https://github.com/GochoMugo/ma3route-cli#readme",
+  "bin": {
+      "ma3route": "bin/ma3route"
+  },
+  "dependencies": {
+      "chalk": "^1.1.0",
+      "lodash": "^3.10.0",
+      "ma3route-sdk": "^0.1.1",
+      "mkdirp": "^0.5.1",
+      "prettyjson": "^1.1.2",
+      "simple-argparse": "^0.1.1"
+  },
+  "devDependencies": {
+      "grunt": "^0.4.5",
+      "grunt-cli": "^0.1.13",
+      "grunt-eslint": "^14.0.0",
+      "grunt-mocha-test": "^0.12.7",
+      "istanbul": "^0.3.17",
+      "load-grunt-tasks": "^3.2.0",
+      "should": "^7.0.1"
+  }
+}
