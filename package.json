@@ -40,5 +40,8 @@
       "istanbul": "^0.3.17",
       "load-grunt-tasks": "^3.2.0",
       "should": "^7.0.1"
+  },
+  "engines": {
+      "node": ">= 0.10.0"
   }
 }
