@@ -4,3 +4,11 @@ node_js:
 - '0.11'
 - '0.10'
 script: npm test
+deploy:
+  provider: npm
+  email: mugo@forfuture.co.ke
+  api_key:
+    secure: PX9MWRCzRGQSRvMMzzqyvjuJbwfziEKXo0mP5xDxp0wWJkyIRgi4Wmd4/9wt0qPwqaUQGrOxMfKX9RgyOFmbGwcvznxAOgrczr33RjZfnJqH8WzG23XXPNc2AhfkAjWKwTu3Oj3n/z/53YZBUZHzwy2cHurLjaEwTFSYeKNUZJYvhFc2jJlAuVsK52DmL/c3bCT2UVkr47Wt75iZuE2Xf9sUYrgMzoJ3h+Aq+tuwASA2+gzcSAkBLie9jrIuPpFILdZGp0sQyWQh38fx4xdzFm0b9R8LDfNW2kYuzcCIoB/JiMn4jis2nhismMFd8S4X8jy7iP7T6Y6rz84vqR45jsXGvEeDp36xHKe8QUYh3+5BBHzYxoTZN+Rlt3JqJuDxDhOaPA+QVF4R1VTKL+j5d0vzXEsebTh4koTIk/mUPqbEBjGViMgORFdcNo3S9+Ko2ragpKcbCExTQ5OQfUoRHFQKbKM0raARIu0SA8H47NO0155LYVb6GZO/OEqJSXmGe8Uai0fZSyXu7lpOP+miyf7TeDdvv7eQNfTCWB2f08MJAo8vCLnY8R6OI3Hfo1cBBQXRcTs9t3qT/Lj/fLKqrtORtyXRQ67tV6YD8lxf50lGuHw57X5dlOBjtgzzdbwmDBxX0ywRm/gxs4qrOJqc+5JZjsK0HsM0LlXn9k7r2Uk=
+  on:
+    tags: true
+    repo: GochoMugo/ma3route-cli
