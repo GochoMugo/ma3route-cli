@@ -1,7 +1,7 @@
 {
   "name": "ma3route-cli",
-  "version": "0.2.0",
-  "description": "Terminal Interface to Ma3Route REST API",
+  "version": "0.3.0",
+  "description": "Terminal Client for Ma3Route REST API",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
@@ -26,9 +26,10 @@
   "dependencies": {
       "camelcase": "^1.1.0",
       "chalk": "^1.1.0",
+      "console.json": "^0.2.1",
       "decamelize": "^1.0.0",
       "lodash": "^3.10.0",
-      "ma3route-sdk": "^0.3.0",
+      "ma3route-sdk": "^0.4.0",
       "mkdirp": "^0.5.1",
       "prettyjson": "^1.1.2",
       "simple-argparse": "^0.1.1"
