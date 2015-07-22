@@ -58,16 +58,6 @@ describe("config.load", function() {
         secret: "some secret",
     };
 
-    function withConfigFile(done, func) {
-        fs.writeFile(originalPath, JSON.stringify(configurations), function(err) {
-            should(err).not.be.ok();
-            return func(function() {
-                fs.unlinkSync(originalPath);
-                return done();
-            });
-        });
-    }
-
     it("returns an object", function() {
         should(config.load()).be.an.Object();
     });
@@ -82,24 +72,20 @@ describe("config.load", function() {
         should.deepEqual(config.load(), require("../lib/defaults"));
     });
 
-    it("allows loading from config file", function(done) {
-        withConfigFile(done, function(finished) {
-            var configs = config.load();
-            should.equal(configs.key, configurations.key);
-            should.equal(configs.secret, configurations.secret);
-            return finished();
-        });
+    it("allows loading from config file", function() {
+        config.save(configurations);
+        var configs = config.load();
+        should.equal(configs.key, configurations.key);
+        should.equal(configs.secret, configurations.secret);
     });
 
-    it("allows loading user configurations only", function(done) {
-        withConfigFile(done, function(amFinished) {
-            var configs = config.load(true);
-            should.equal(configs.key, configurations.key);
-            should(configs.limit).be.Undefined();
-            configs = config.load(false);
-            should(configs.limit).not.be.Undefined();
-            return amFinished();
-        });
+    it("allows loading user configurations only", function() {
+        config.save(configurations);
+        var configs = config.load(true);
+        should.equal(configs.key, configurations.key);
+        should(configs.limit).be.Undefined();
+        configs = config.load(false);
+        should(configs.limit).not.be.Undefined();
     });
 });
 
