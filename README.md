@@ -73,16 +73,23 @@ users               ma3route users
 
 All these sub-commands refer to the SDK inner modules. For example, `banner-adverts` uses the `bannerAdverts` module in the SDK.
 
-If a module (which most do) has a `get` or `getOne` function, you run the relevant sub-command straight away.
+If a module (which most do) supports retrieving the relevant entities, you can use the `--get` flag or omit it entirely:
 
 ```bash
-$ ma3route traffic-updates
+$ ma3route traffic-updates --get
+$ ma3route traffic-updates          # --get is implied
 ```
 
-To use a module's `createOne` function, use the flag `--create`.
+To create an entity, use the flag `--create`:
 
 ```bash
 $ ma3route users --create --email=john.done@example.com --password=secretpassword
+```
+
+To delete an entity, use the flag `--delete`:
+
+```bash
+$ ma3route traffic-updates --delete --id=101
 ```
 
 Any other module function can be specified using a decamelized option. For example, to invoke the `getTowns` function in module `places`, use the flag `--get-towns`
@@ -90,6 +97,8 @@ Any other module function can be specified using a decamelized option. For examp
 ```bash
 $ ma3route places --get-towns
 ```
+
+> Note that **not** all commands support all these flags. For example, you can **not** delete a user with `users --delete`
 
 
 ### parameters:
@@ -113,6 +122,12 @@ To view version information:
 
 ```bash
 $ ma3route version
+```
+
+To enable debug output, just ensure the environment variable `${DEBUG}` is truthy:
+
+```bash
+$ DEBUG=1 ma3route config
 ```
 
 
