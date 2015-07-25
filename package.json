@@ -26,6 +26,7 @@
   "dependencies": {
       "camelcase": "^1.1.0",
       "chalk": "^1.1.0",
+      "cli-output": "^0.0.0",
       "console.json": "^0.2.1",
       "decamelize": "^1.0.0",
       "lodash": "^3.10.0",
