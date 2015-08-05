@@ -20,7 +20,13 @@ parser
     .version(pkg.version)
     .description("ma3route", "terminal client for the Ma3Route REST API v2")
     .epilog("See https://github.com/GochoMugo/ma3route-cli for source code and license")
-    .option("config", "run configuration setup", lib.config.run);
+    .option("config", "run configuration setup", lib.config.run)
+    .prerun(function() {
+      if (this.debug) {
+        process.env.DEBUG = process.env.DEBUG || 1;
+        delete this.debug;
+      }
+    });
 
 
 // add options

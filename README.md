@@ -130,6 +130,12 @@ To enable debug output, just ensure the environment variable `${DEBUG}` is truth
 $ DEBUG=1 ma3route config
 ```
 
+You can also use the `--debug` flag to show debug output:
+
+```bash
+$ ma3route config --debug
+```
+
 
 ## license:
 
