@@ -25,27 +25,26 @@
       "ma3route": "bin/ma3route"
   },
   "dependencies": {
-      "camelcase": "^1.1.0",
-      "chalk": "^1.1.0",
-      "cli-output": "^0.0.0",
+      "camelcase": "^1.2.1",
+      "chalk": "^1.1.1",
+      "cli-output": "^0.1.0",
       "console.json": "^0.2.1",
       "decamelize": "^1.0.0",
       "lodash": "^3.10.0",
-      "ma3route-sdk": "^0.7.0",
+      "ma3route-sdk": "^0.8.0",
       "mkdirp": "^0.5.1",
-      "prettyjson": "^1.1.2",
       "simple-argparse": "^0.3.0"
   },
   "devDependencies": {
-      "coveralls": "^2.11.3",
+      "coveralls": "^2.11.4",
       "grunt": "^0.4.5",
       "grunt-cli": "^0.1.13",
-      "grunt-eslint": "^17.0.0",
+      "grunt-eslint": "^17.2.0",
       "grunt-mocha-test": "^0.12.7",
-      "istanbul": "^0.3.17",
-      "load-grunt-tasks": "^3.2.0",
-      "mocha-lcov-reporter": "^0.0.2",
-      "should": "^7.0.1"
+      "istanbul": "^0.3.21",
+      "load-grunt-tasks": "^3.3.0",
+      "mocha-lcov-reporter": "^1.0.0",
+      "should": "^7.1.0"
   },
   "engines": {
       "node": ">= 0.10.0"
