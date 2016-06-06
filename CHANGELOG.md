@@ -7,6 +7,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+
+### 0.7.0 - 2016-06-06
+
+Added:
+
+* aliases/shorts for commands
+
 Changed:
 
 * Update codebase

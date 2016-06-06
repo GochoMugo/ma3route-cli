@@ -1,6 +1,6 @@
 {
   "name": "ma3route-cli",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Terminal Client for Ma3Route REST API",
   "main": "lib/index.js",
   "scripts": {
