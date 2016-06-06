@@ -22,6 +22,6 @@ describe("main module", function() {
     });
 
     it("exports generated options", function() {
-        should(lib).containDeep(generate.make());
+        should(lib.options).containDeep(generate.make());
     });
 });

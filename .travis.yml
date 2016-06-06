@@ -1,15 +1,8 @@
 language: node_js
 node_js:
+- '4'
 - '0.12'
 - '0.11'
 - '0.10'
 script: npm test
 after_script: npm run test-coverage && cat ./coverage/lcov.info | coveralls
-deploy:
-  provider: npm
-  email: mugo@forfuture.co.ke
-  api_key:
-    secure: YP2MOcMH/tAgd4PcB8sG/Cl60qXKhYGla25Yghbf06NfCQwRq26Vu6b1CW4En73dW51s+g+tScVBElNgkA7gj5BwF7QEfO9TP0JiP0+kedJ5+phUqEx1pW1hVZEJ14TSAKvaT6S0NTTQi0v6yABKWF408YQrL4hzaL7tmtAvH1/wCMGCG7VIrhg409hHTWrpQwRvL+qtGNO8Kb1XibOTW+YTabczEbmEQzzB5Qm6gz70XiVFQFrhaqG/t5FW6sSJxNPbJ4LgSPZ8AIr7X5a3l/5sMhIH0puWLPxCNcUeeC1+JhwOgq+Ayitut1VXMW3332mEZ3ni+xsmLr11JVtrDJLIoS/Vxa96+BWfD4FPHxbRTyUizbnkMAh+M+/1xldEn++MXSET+/1LfatCd1vGWZjdesSVU1z69ARfbdNZvPWN0ro+7UWZA6uG9XCmnMu4VCPKYUJSYmhNPsNj9Oql8IyoLXd5pdPI15Y4Kh2juvwsgdR744T3WXMpAwurbyxpT5uubzHBNLqyJsA3hpxWPcQTbs/vXDrGDKUTTmFZwv6rYP+ZDYGOqEcqpwkpdy/Xm87lXWyqA4/+9MCo4F2/h7cmoW+dLvWk7hK/Y/PZed0brWJIt6KpMUDM/o/cpl1/X/Afe33isUsrqVL5Ne8RmjWKtui0JHpuA50UTXzOKH0=
-  on:
-    tags: true
-    repo: GochoMugo/ma3route-cli

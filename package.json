@@ -2,7 +2,7 @@
   "name": "ma3route-cli",
   "version": "0.6.0",
   "description": "Terminal Client for Ma3Route REST API",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "grunt test",
     "test-coverage": "istanbul cover _mocha --report lcovonly -- -R spec test/test.*.js"
@@ -31,9 +31,9 @@
     "console.json": "^0.2.1",
     "decamelize": "^1.0.0",
     "lodash": "^4.11.2",
-    "ma3route-sdk": "^0.10.0",
+    "ma3route-sdk": "^0.10.2",
     "mkdirp": "^0.5.1",
-    "simple-argparse": "^0.3.0"
+    "simple-argparse": "^1.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.4",
